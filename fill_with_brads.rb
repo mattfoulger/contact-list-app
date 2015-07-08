@@ -1,0 +1,11 @@
+Contact.create(first_name: "Brad", last_name: "McBradden", email: "bradman@highlander.com")
+Contact.create(first_name: "Brad", last_name: "Bradilini", email: "forza@gmail.com")
+Contact.create(first_name: "Brads", last_name: "Bradins", email: "gocanucksgo@latvia.com")
+Contact.create(first_name: "Brad", last_name: "O'Bradley", email: "luckofthebrad@gmail.com")
+# Contact.create(first_name: "Brad", last_name: "Bradford", email: "bbradford@gmail.com")
+Contact.create(first_name: "Brad", last_name: "Braddelberg", email: "raddler@bavaria.com")
+
+Contact.create(first_name: "Brad", last_name: "DeBraad", email: "legalizeit@gmail.com")
+Contact.create(first_name: "Brad", last_name: "Von Bradd", email: "doctorbrad@vancouvercoastalhealth.gov.bc.ca")
+Contact.create(first_name: "Brad", last_name: "Bradmeister", email: "thebradarama@duuuuuude.com")
+# Contact.create(first_name: "Brad", last_name: "Al-brad", email: "brad@")
