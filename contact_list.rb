@@ -4,12 +4,16 @@ require_relative 'contact'
 require_relative 'help'
 
 
-@first, @second, @third = ARGV 
+@first, @second = ARGV 
 running = true
 
 
 def list(array)
-  array.each { |contact| contact.display }
+  # array.each { |contact| contact.display }
+  array.each do |contact| 
+    puts contact.firstname
+    puts contact.lastname
+    puts contact.email
 end
 
 
@@ -71,6 +75,5 @@ loop do
   arg_array = STDIN.gets.chomp.downcase.split(" ")
   @first = arg_array[0]
   @second = arg_array[1]
-  @third = arg_array[2]
 
 end
