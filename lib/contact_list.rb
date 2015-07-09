@@ -41,7 +41,7 @@ def create
 end
 
 def search(term)
-  list(Contact.where("first_name = ? OR last_name = ? OR email = ?", term, term, term))
+  list(Contact.where("lower(first_name) LIKE ? OR lower(last_name) = ? OR lower(email) = ?", term.downcase, term.downcase, term.downcase))
 end
 
 def find(id)
@@ -77,6 +77,13 @@ loop do
       @second = STDIN.gets.chomp
     end
     search(@second)
+  when "update"
+    unless @second
+      puts "Enter contact ID:"
+      @second = STDIN.gets.chomp
+    end
+    update(@second)
+
   end
 
   puts "--------------------------------"
